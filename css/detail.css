@@ -68,12 +68,6 @@
 	#contents .row {
 		padding: 80px 0;
 	}
-	#contents .row.fixed {
-		position: fixed;
-	}
-	#contents .pic {
-		overflow-y: scroll;
-	}
 	#contents .txt h3 {
 		font-size: 24px;
 	}
