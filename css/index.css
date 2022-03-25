@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+#contents {
+	padding: 30px 0;
+}
+#contents .project {
+	margin-bottom: 30px;
+}
+#contents .project a {
+	width: 100%;
+}
+#contents .project .pic {
+	width: 100%;
+	background-size: cover;
+	background-position: center top;
+	transition: 0.6s;
+}
+.project1 .pic {
+	background-image: url(../images/work/2021_01.jpg);
+}
+.project2 .pic {
+	background-image: url(../images/work/2021_02.jpg);
+}
+.project3 .pic {
+	background-image: url(../images/work/2020_01.jpg);
+}
+.project4 .pic {
+	background-image: url(../images/work/2019_01.jpg);
+}
+.project5 .pic {
+	background-image: url(../images/work/2018_01.jpg);
+}
+.project6 .pic {
+	background-image: url(../images/work/2017_01.jpg);
+}
+.project7 .pic {
+	background-image: url(../images/work/2017_02.jpg);
+}
+.project8 .pic {
+	background-image: url(../images/work/2016_01.jpg);
+}
+.project9 .pic {
+	background-image: url(../images/work/incomplete.jpg);
+}
+.project10 .pic {
+	background-image: url(../images/work/incomplete2.jpg);
+}
+
+#contents .project .txt {
+	padding: 20px 0;
+	text-align: center;
+	color: #141414;
+}
+#contents .project .txt .txt-box {
+	height: 30px;
+	position: relative;
+	overflow: hidden;
+}
+#contents .project .txt h2 {
+	font-weight: 700;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	line-height: 30px;
+	opacity: 1;
+	width: 100%;
+}
+#contents .project .txt .ongoing {
+	font-weight: 300;
+	line-height: 30px;
+	margin-top: 20px;
+	opacity: 0;
+	transition: 0.6s;
+}
+#contents .project .txt .titChange {
+	transition: top 0.6s, opacity 0.4s;
+}
+#contents .project .txt .ongoing {
+	font-size: 16px;
+}
+#contents .project:hover .txt .titChange {
+	top: -30px;
+	opacity: 0;
+}
+#contents .project:hover .txt .ongoing {
+	margin-top: 0px;
+	opacity: 1;
+}
+.project1:hover .pic {
+	background-image: url(../images/work/2021_01h.jpg);
+}
+.project2:hover .pic {
+	background-image: url(../images/work/2021_02h.jpg);
+}
+.project3:hover .pic {
+	background-image: url(../images/work/2020_01h.jpg);
+}
+.project4:hover .pic {
+	background-image: url(../images/work/2019_01h.jpg);
+}
+.project5:hover .pic {
+	background-image: url(../images/work/2018_01h.jpg);
+}
+.project6:hover .pic {
+	background-image: url(../images/work/2017_01h.jpg);
+}
+.project7:hover .pic {
+	background-image: url(../images/work/2017_02h.jpg);
+}
+.project8:hover .pic {
+	background-image: url(../images/work/2016_01h.jpg);
+}
+
+@media screen and (min-width: 768px) {
+	#contents {
+		padding: 50px 0 20px;
+	}
+}

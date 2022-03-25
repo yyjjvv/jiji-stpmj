@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/*Reset & Initial Setting*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+@import url(./reset.css);
+body {
+	font-size: 16px;
+	color: #141414;
+	font-family: Lato, sans-serif;
+	line-height: 1;
+}
+a:focus, a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+/*Header & Navigation*/
+#header .container {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.navbar {
+	min-height:unset;
+	margin-bottom: 0px;
+	border: none;
+}
+.navbar-default {
+	background-color:unset;
+	border-color: transparent;
+}
+#header .logo {
+	width: 150px;
+}
+.navbar-brand {
+	height: auto;
+}
+.navbar-toggle {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 5px;
+	border: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #141414;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+	color: #141414;
+	background-color: #efefef;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #777;
+}
+.navbar-collapse {
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+.navbar-nav {
+	margin: 0px -15px;
+}
+
+/*Footer*/
+#footer {
+	font-size: 12px;
+	padding: 50px 0;
+	text-align: center;
+	background: #eaeaea;
+}
+
+/*Top Button*/
+.side-btn {
+	position: fixed;
+	right: 15px;
+	bottom: 30px;
+}
+.side-btn .goto-top {
+	font-size: 14px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	opacity: 0;
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+	.nav {
+		margin-top: 23px;
+	}
+	.navbar {
+		height: 100px;
+	}
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form {
+		border-color: transparent;
+	}
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:focus,
+	.navbar-default .navbar-nav > .active > a:hover {
+		color: #141414;
+		background-color: transparent;
+	}
+	#header .logo {
+		margin-top: 10px;
+	}
+	#footer {
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.side-btn .goto-top {
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+	}
+}

@@ -1,0 +1,132 @@
+@charset "utf-8";
+#visual {
+	width: 100%;
+	height: 300px;
+	background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.3)
+		),
+		url("../images/work/super_natural/visual.jpg");
+	background-position: center top;
+	background-size: cover;
+	position: relative;
+}
+#visual h2 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	width: 100%;
+	text-align: center;
+}
+
+#contents .row {
+	padding: 50px 0;
+}
+#contents img {
+	display: block;
+	margin-bottom: 20px;
+}
+#contents .txt {
+	padding: 30px 0;
+	border-bottom: 1px solid #777;
+}
+#contents .txt h3 {
+	font-weight: 300;
+	font-size: 20px;
+	color: #141414;
+	margin-bottom: 30px;
+}
+#contents .txt > p,
+#contents .detail {
+	font-size: 14px;
+	line-height: 1.5;
+}
+#contents .txt > p {
+	text-indent: 15px;
+	margin-bottom: 10px;
+}
+
+#contents .detail {
+	margin-top: 40px;
+}
+#contents .detail > li {
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+	#visual {
+		height: 400px;
+	}
+	#visual h2 {
+		font-size: 30px;
+	}
+	#contents .row {
+		padding: 80px 0;
+	}
+	#contents .row.fixed {
+		position: fixed;
+	}
+	#contents .pic {
+		overflow-y: scroll;
+	}
+	#contents .txt h3 {
+		font-size: 24px;
+	}
+
+	#contents .detail b {
+		margin-bottom: 10px;
+	}
+	#contents .detail > li {
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#visual {
+		height: 500px;
+	}
+	#visual h2 {
+		font-size: 36px;
+	}
+	#contents .row {
+		padding: 100px 0;
+	}
+	#contents .dec {
+		padding-left: 50px;
+	}
+	#contents .txt {
+		padding: 50px 0;
+	}
+	#contents .txt h3 {
+		font-size: 30px;
+		margin-bottom: 40px;
+	}
+	#contents .txt > p,
+	#contents .detail {
+		font-size: 16px;
+	}
+	#contents .txt > p {
+		margin-bottom: 20px;
+	}
+
+	#contents .detail {
+		margin-top: 60px;
+	}
+	#contents .detail > li {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 15px;
+	}
+	#contents .detail b {
+		margin-bottom: 10px;
+		width: 150px;
+	}
+	#contents .detail p {
+		width: calc(100% - 150px);
+	}
+}
